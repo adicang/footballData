@@ -10,6 +10,8 @@ import Fade from 'react-reveal/Fade';
 const Teams = props => {
   const [loading, setLoading] = useState(true);
   const [teams, setTeams] = useState([]);
+  const [search, setSearch] = useState('');
+  const [allTeamsFiltered, setAllTeamsFiltered] = useState([]);
 
   useEffect(() => {
     fetchData();
@@ -36,6 +38,19 @@ const Teams = props => {
       });
   };
 
+  useEffect(() => {
+    if (search !== '' || search !== null) {
+      const filteredData = teams.filter(
+        item =>
+          item.name && item.name.toLowerCase().includes(search.toLowerCase())
+      );
+
+      setAllTeamsFiltered(filteredData);
+    } else {
+      setAllTeamsFiltered(null);
+    }
+  }, [search]);
+
   const handleRowClick = row => {
     props.history.push(`/team?id=${row.id}`);
   };
@@ -47,11 +62,19 @@ const Teams = props => {
       {teams.length > 0 && (
         <div className='table-container'>
           <Fade bottom>
+            <div className='header-row'>
+              <h1>Football Teams</h1>
+              <input
+                type='text'
+                placeholder='Search by team name'
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+              />
+            </div>
             <DataTable
               className='table'
               columns={columns}
-              data={teams}
-              // data={filterText ? allInstFiltered : allInst}
+              data={search ? allTeamsFiltered : teams}
               defaultSortField='founded'
               striped
               noHeader={true}

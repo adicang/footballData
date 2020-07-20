@@ -8,11 +8,29 @@
     width: 85%;
     margin: 5%;
     height: 70%;
-    overflow-y: scroll;
+
+    .header-row {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+
+      input {
+        padding: 1%;
+        border: none;
+        border-radius: 2%;
+        width: 20%;
+        font-family: inherit;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
 
     .table {
       max-height: 60vh;
-      overflow: scroll;
+      overflow-y: scroll;
     }
 
     .kQMzuQ {
@@ -64,6 +82,17 @@
       &:focus {
         outline: none;
       }
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  .header-row {
+    flex-direction: column;
+    margin-bottom: 2%;
+
+    input {
+      width: 70% !important;
     }
   }
 }
