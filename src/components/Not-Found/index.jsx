@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './not-found.scss';
+import './index.scss';
 
 const NotFound = props => {
   return (
@@ -8,7 +8,7 @@ const NotFound = props => {
       <h1>Page Not Found</h1>
       <p>Sorry, this page does not exist</p>
 
-      <button onClick={() => props.history.push('/')}>
+      <button onClick={() => props.history.push(process.env.PUBLIC_URL + '/')}>
         Click here to go home
       </button>
     </div>

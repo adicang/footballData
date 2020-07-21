@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-import Loader from './Loader';
-import './teams-screen.scss';
-import EmptyTeamLogoSrc from '../assets/football.png';
+import Loader from '../Loader';
+import './index.scss';
+import EmptyTeamLogoSrc from '../../assets/football.png';
 
 import DataTable from 'react-data-table-component';
 import Fade from 'react-reveal/Fade';
@@ -52,7 +52,7 @@ const Teams = props => {
   }, [search]);
 
   const handleRowClick = row => {
-    props.history.push(`/team?id=${row.id}`);
+    props.history.push(`${process.env.PUBLIC_URL}/team?id=${row.id}`);
   };
 
   return (

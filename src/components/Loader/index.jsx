@@ -1,7 +1,7 @@
 import React from 'react';
 
-import LoaderGif from '../assets/loader.gif';
-import './Loader.scss';
+import LoaderGif from '../../assets/loader.gif';
+import './index.scss';
 
 const Loader = () => {
   return (

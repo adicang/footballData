@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
-import Loader from './Loader';
-import './single-team-screen.scss';
-import EmptyTeamLogoSrc from '../assets/football.png';
-import shirtSrc from '../assets/shirt.png';
+import Loader from '../Loader';
+import './index.scss';
+import EmptyTeamLogoSrc from '../../assets/football.png';
+import shirtSrc from '../../assets/shirt.png';
 
 import DataTable from 'react-data-table-component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

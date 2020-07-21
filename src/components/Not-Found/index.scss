@@ -5,15 +5,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   h1 {
     font-size: 45px;
   }
-
   p {
     font-size: 30px;
   }
-
   button {
     font-family: inherit;
     padding: 1%;
@@ -22,13 +19,11 @@
     font-weight: bold;
     color: #435159;
     background-color: white;
-
     &:hover {
       background-color: #435159;
       color: white;
       cursor: pointer;
     }
-
     &:focus {
       outline: none;
     }

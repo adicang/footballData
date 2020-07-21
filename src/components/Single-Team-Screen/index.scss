@@ -4,64 +4,52 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
   .go-back {
     width: 80%;
     margin-top: 3%;
     margin-bottom: 2%;
-
     svg {
       margin-right: 1%;
     }
-
     &:hover {
       cursor: pointer;
       font-weight: bold;
     }
   }
-
   .team-container {
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     .header {
       display: flex;
       width: 100%;
       justify-content: center;
       align-items: center;
       margin-bottom: 2%;
-
       h1 {
         font-size: 3rem;
         margin-left: 5%;
       }
-
       .team-logo {
         max-width: 10%;
       }
     }
-
     .inner-team-container {
       width: 100%;
       display: flex;
       justify-content: center;
       margin-top: 3%;
-
       .details-container {
         min-width: 50%;
-
         a {
           color: inherit;
           text-decoration: none;
-
           &:hover {
             cursor: pointer;
           }
         }
-
         svg {
           margin-right: 1%;
         }
@@ -69,13 +57,11 @@
       .squad-table {
         height: 45vh;
         overflow-y: scroll;
-
         .player-shirt {
           position: relative;
           img {
             width: 60px;
           }
-
           span {
             position: absolute;
             width: fit-content;
@@ -86,7 +72,6 @@
       }
     }
   }
-
   .no-results {
     width: 100%;
     height: 100%;
@@ -95,15 +80,12 @@
     justify-content: center;
     align-items: center;
     margin-top: 20%;
-
     h1 {
       font-size: 45px;
     }
-
     p {
       font-size: 30px;
     }
-
     button {
       font-family: inherit;
       padding: 1%;
@@ -112,25 +94,21 @@
       font-weight: bold;
       color: #435159;
       background-color: white;
-
       &:hover {
         background-color: #435159;
         color: white;
         cursor: pointer;
       }
-
       &:focus {
         outline: none;
       }
     }
   }
 }
-
 @media (max-width: 764px) {
   .header {
     flex-direction: column;
     margin-top: 2%;
-
     .team-logo {
       max-width: 15%;
     }
@@ -138,10 +116,8 @@
       font-size: 1.5rem !important;
     }
   }
-
   .inner-team-container {
     flex-direction: column;
-
     .players-container {
       margin-bottom: 1%;
     }

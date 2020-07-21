@@ -7,7 +7,7 @@ body {
   height: 100vh;
   font-family: 'Raleway' !important;
   width: 100%;
-  background-image: url(/static/media/background.afb6d9d5.jpg);
+  background-image: url('assets/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
