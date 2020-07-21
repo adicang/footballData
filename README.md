@@ -8,11 +8,11 @@ The following tree shows the structure of the components in the whole app.
 - App
   - Router
 	- Switch
-    - Teams (Route)
-      - Loader
-    - Team (Route)
-      - Loader
-    - NotFound (Route)
+	    - Teams (Route)
+	      - Loader
+	    - Team (Route)
+	      - Loader
+	    - NotFound (Route)
      
 
 ## External Api's
