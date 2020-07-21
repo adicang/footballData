@@ -91,7 +91,7 @@ const SingleTeam = props => {
                   className='squad-table'
                   columns={columns}
                   data={team.squad}
-                  defaultSortField='name'
+                  defaultSortField='shirtNumber'
                   striped
                   noHeader={true}
                   customStyles={customStyles}
